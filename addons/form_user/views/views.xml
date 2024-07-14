@@ -1,0 +1,46 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="form_user.list">
+      <field name="name">form_user list</field>
+      <field name="model">form_user.form_user</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="last_name"/>
+          <field name="email"/>
+          <field name="telefono"/>
+          <field name="fecha_nacimiento"/>
+          <field name="genero"/>
+          <field name="estado_civil"/>
+          <field name="direccion"/>
+          <field name="ciudad"/>
+          <field name="estado_provincia"/>
+          <field name="pais"/>
+          <field name="codigo_postal"/>
+        </tree>
+      </field>
+    </record>
+
+
+ 
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="form_user.action_server">
+      <field name="name">form_user server</field>
+      <field name="model_id" ref="model_form_user_form_user"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+  </data>
+</odoo>
