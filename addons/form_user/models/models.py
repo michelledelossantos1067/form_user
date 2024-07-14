@@ -1,18 +1,21 @@
 # -*- coding: utf-8 -*-
 
-# from odoo import models, fields, api
+from odoo import models, fields, api
 
 
-# class form_user(models.Model):
-#     _name = 'form_user.form_user'
-#     _description = 'form_user.form_user'
-
-#     name = fields.Char()
-#     value = fields.Integer()
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
-#
-#     @api.depends('value')
-#     def _value_pc(self):
-#         for record in self:
-#             record.value2 = float(record.value) / 100
+class Client(models.Model):
+    _name = 'form_user.form_user'
+    _description = 'Información del cliente '
+    
+    name = fields.Char(string='Name')
+    last_name = fields.Char(string='Last name')
+    email = fields.Char(string= 'Name')
+    telefono = fields.Char(string='Name')
+    fecha_nacimiento = fields.Date( 'Fecha Nacimiento')
+    genero = fields. Char (string='Genero')
+    estado_civil = fields.Char(string='Estado civil')
+    direccion = fields.Char(string='Dirección')
+    ciudad = fields.Char(string='Ciudad')
+    estado_provincia = fields.Char(string='Estado provincia')
+    pais = fields.Char(string='País')
+    codigo_postal = fields.Char (string='Codigo postal')

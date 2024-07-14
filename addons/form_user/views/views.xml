@@ -1,31 +1,33 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-<!--
+
     <record model="ir.ui.view" id="form_user.list">
       <field name="name">form_user list</field>
       <field name="model">form_user.form_user</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
+          <field name="last_name"/>
+          <field name="email"/>
+          <field name="telefono"/>
+          <field name="fecha_nacimiento"/>
+          <field name="genero"/>
+          <field name="estado_civil"/>
+          <field name="direccion"/>
+          <field name="ciudad"/>
+          <field name="estado_provincia"/>
+          <field name="pais"/>
+          <field name="codigo_postal"/>
         </tree>
       </field>
     </record>
--->
 
-    <!-- actions opening views on models -->
-<!--
-    <record model="ir.actions.act_window" id="form_user.action_window">
-      <field name="name">form_user window</field>
-      <field name="res_model">form_user.form_user</field>
-      <field name="view_mode">tree,form</field>
-    </record>
--->
+
+ 
 
     <!-- server action to the one above -->
-<!--
+    <!--
     <record model="ir.actions.server" id="form_user.action_server">
       <field name="name">form_user server</field>
       <field name="model_id" ref="model_form_user_form_user"/>
@@ -40,21 +42,5 @@
     </record>
 -->
 
-    <!-- Top menu item -->
-<!--
-    <menuitem name="form_user" id="form_user.menu_root"/>
--->
-    <!-- menu categories -->
-<!--
-    <menuitem name="Menu 1" id="form_user.menu_1" parent="form_user.menu_root"/>
-    <menuitem name="Menu 2" id="form_user.menu_2" parent="form_user.menu_root"/>
--->
-    <!-- actions -->
-<!--
-    <menuitem name="List" id="form_user.menu_1_list" parent="form_user.menu_1"
-              action="form_user.action_window"/>
-    <menuitem name="Server to list" id="form_user" parent="form_user.menu_2"
-              action="form_user.action_server"/>
--->
   </data>
 </odoo>
