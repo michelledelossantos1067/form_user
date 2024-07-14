@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-
-       <!-- actions opening views on models -->
     
     <record model="ir.actions.act_window" id="form_user.action_window">
-      <field name="name">form_user window</field>
+      <field name="name">Client</field>
       <field name="res_model">form_user.form_user</field>
       <field name="view_mode">tree,form</field>
     </record>
